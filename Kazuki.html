@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ficha de Personagem - Kazuki Hiruma</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: #121014;
+    color: #ddd;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 2rem auto 3rem;
+    padding: 1.5rem 2rem;
+    background: #1f1a2e;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #6f42c1cc;
+  }
+
+  h1, h2, h3, h4 {
+    color: #c17eff;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  h2 {
+    border-bottom: 2px solid #6f42c1;
+    padding-bottom: 4px;
+  }
+
+  p, li {
+    font-weight: 300;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #6f42c1cc;
+    margin: 2rem 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 0.6rem 0.8rem;
+    border-bottom: 1px solid #4a3a6a;
+  }
+
+  th {
+    color: #c17eff;
+    font-weight: 600;
+    width: 160px;
+  }
+
+  .attribute-highlight {
+    color: #9f73ff;
+    font-weight: 600;
+  }
+
+  ul {
+    padding-left: 1.3rem;
+    margin: 0.3rem 0 1rem 0;
+  }
+
+  /* Boxes for characteristics & mental states */
+  .box {
+    background: #2a2242;
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    margin: 1rem 0;
+    box-shadow: inset 0 0 10px #6f42c1aa;
+  }
+
+  .state-list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .state-list span {
+    background: #3e2e6d;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: default;
+    user-select: none;
+  }
+
+  .state-list span.active {
+    background: #9f73ff;
+    color: #121014;
+    font-weight: 600;
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 600px) {
+    .container {
+      padding: 1rem 1rem;
+      margin: 1rem;
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <main class="container">
+    <h1>Ficha de Personagem – Sky Court RPG</h1>
+
+    <h2>📌 Identidade do Jogador</h2>
+    <table>
+      <tbody>
+        <tr><th>Nome:</th><td>Kazuki Hiruma</td></tr>
+        <tr><th>Apelido:</th><td>O Muro Violeta</td></tr>
+        <tr><th>Idade:</th><td>17</td></tr>
+        <tr><th>Altura:</th><td>1,90m</td></tr>
+        <tr><th>Escola:</th><td>Colégio Seiryuu</td></tr>
+        <tr><th>Time:</th><td>Seiryuu VBC</td></tr>
+        <tr><th>Número da Camisa:</th><td>69</td></tr>
+        <tr><th>Frase Icônica:</th><td><em>“Se não vai passar por mim... nem precisa tentar.”</em></td></tr>
+      </tbody>
+    </table>
+
+    <h2>🏐 Função na Quadra</h2>
+    <table>
+      <tbody>
+        <tr><th>Posição:</th><td><strong>Central</strong></td></tr>
+        <tr><th>Estilo de Jogo:</th><td><strong>Defensivo</strong> (+1 Reflexo)</td></tr>
+      </tbody>
+    </table>
+
+    <h2>💪 Atributos (30 pontos distribuídos)</h2>
+    <table>
+      <thead>
+        <tr><th>Atributo</th><th>Pontos</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Força</td><td>9</td></tr>
+        <tr><td>Técnica</td><td>5</td></tr>
+        <tr><td>Reflexo</td><td><span class="attribute-highlight">10 (+1 estilo +1 posição +1 rank = 13)</span></td></tr>
+        <tr><td>Energia</td><td>3</td></tr>
+        <tr><td>Espírito</td><td>3</td></tr>
+      </tbody>
+    </table>
+
+    <h2>🎯 Subatributos Técnicos (5 pontos iniciais)</h2>
+    <table>
+      <thead>
+        <tr><th>Fundamento</th><th>Pontos</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Levantamento</td><td>0</td></tr>
+        <tr><td>Corte</td><td>1</td></tr>
+        <tr><td>Recepção</td><td>0</td></tr>
+        <tr><td>Saque</td><td>0</td></tr>
+        <tr><td><strong>Bloqueio</strong></td><td><strong>3</strong></td></tr>
+        <tr><td>Cobertura</td><td>0</td></tr>
+        <tr><td>Defesa Baixa</td><td>0</td></tr>
+        <tr><td>Leitura de Jogo</td><td>0</td></tr>
+        <tr><td>Sincronia de Time</td><td>1</td></tr>
+      </tbody>
+    </table>
+
+    <h2>✨ Habilidade Especial</h2>
+    <div class="box">
+      <p><strong>Nome:</strong> Muralha da Extinção</p>
+      <p><strong>Descrição:</strong> Se o ataque inimigo for um corte rápido ou crítico (d20 ≥ 18), Kazuki ganha +3 na rolagem de bloqueio.</p>
+      <p><strong>Limite de uso:</strong> 2x por set</p>
+    </div>
+
+    <h2>🧠 Estado Mental Atual</h2>
+    <div class="state-list">
+      <span class="active">Concentrado</span>
+      <span>Motivado</span>
+      <span>Nervoso</span>
+      <span>Exausto</span>
+      <span>Inspirado</span>
+    </div>
+
+    <h2>📈 Evolução</h2>
+    <table>
+      <tbody>
+        <tr><th>PE Acumulados:</th><td>0</td></tr>
+        <tr><th>PE Usados:</th><td>0</td></tr>
+        <tr><th>PE Restantes:</th><td>0</td></tr>
+        <tr><th>Treinos Recentes:</th><td>—</td></tr>
+        <tr><th>Técnica desbloqueada de Subatributo (nível 10):</th><td>—</td></tr>
+      </tbody>
+    </table>
+
+    <h2>🏅 Rank Atual</h2>
+    <p><strong>Promissor</strong> (+1 PE por vitória)</p>
+
+    <h2>⚡ Técnicas Avançadas e Jogadas Combinadas</h2>
+    <table>
+      <thead>
+        <tr><th>Nome da Técnica / Jogada</th><th>Efeito / Condições de Uso</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Selo Aéreo</td><td>+2 Bloqueio se o adversário usar corte aéreo</td></tr>
+        <tr><td>Tranca Dupla</td><td>+1 Reflexo se sincronizado com outro central</td></tr>
+      </tbody>
+    </table>
+
+    <h2>🎯 Características do Personagem — Kazuki Hiruma (Central Defensivo)</h2>
+    <div class="box">
+      <h3>Posição: Central</h3>
+      <ul>
+        <li>Especialista em bloqueios, responsável por impedir os ataques fortes do adversário.</li>
+        <li>Usa sua altura (1,90m) e força para formar a “muralha” da equipe na rede.</li>
+        <li>Foco em controle de espaço e timing para anular os cortes e saques adversários.</li>
+      </ul>
+
+      <h3>Estilo: Defensivo (+1 Reflexo)</h3>
+      <ul>
+        <li>Altíssimo reflexo e velocidade para reagir às bolas que ultrapassam o bloqueio.</li>
+        <li>Prioriza a proteção da quadra, agindo como um escudo para os companheiros.</li>
+        <li>Joga com disciplina e consistência, evitando erros e mantendo o foco mesmo sob pressão.</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h3>Características de Jogo e Comportamento</h3>
+      <ul>
+        <li><strong>Imponente e Intimidador:</strong> A presença física de Kazuki já desmotiva os atacantes adversários.</li>
+        <li><strong>Silencioso e Calmo:</strong> Fala pouco, mas suas ações falam alto. Prefere deixar os bloqueios e defesas demonstrarem sua força.</li>
+        <li><strong>Foco no Bloqueio:</strong> Seu ponto forte é bloquear ataques rápidos e poderosos, quase sempre neutralizando pontos adversários.</li>
+        <li><strong>Pouca Interação Social:</strong> Tem dificuldade em se conectar emocionalmente com o time, o que pode gerar pequenas falhas de sincronia.</li>
+        <li><strong>Persistente e Implacável:</strong> Quando em quadra, não desiste de nenhuma bola — mesmo exausto, mantém o posicionamento e a concentração.</li>
+        <li><strong>Tendência a Ser Apático Fora da Quadra:</strong> Não demonstra muita motivação, mas seu compromisso é inegável.</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h3>Estados Mentais Comuns</h3>
+      <ul>
+        <li><strong>Concentrado:</strong> Kazuki mantém o foco máximo, ignorando distrações e ruídos do ambiente.</li>
+        <li><strong>Motivado:</strong> Raramente, mas quando realmente importa, sua força e reflexos podem atingir picos surpreendentes.</li>
+        <li><strong>Exausto:</strong> Depois de muito tempo defendendo, pode perder reflexos momentaneamente — mas dificilmente abandona a posição.</li>
+        <li><strong>Nervoso:</strong> Pouco comum, mas pode ocorrer quando falha um bloqueio crucial — o que ele evita a todo custo.</li>
+      </ul>
+    </div>
+
+    <h2>📜 Lore do Personagem</h2>
+    <p>
+      Kazuki Hiruma era um garoto que preferia dormir e comer a competir, até ser desafiado por um atacante arrogante no primeiro ano do ensino médio. Quando o time adversário zombou de sua altura e lentidão, Kazuki bloqueou cinco bolas seguidas. Desde então, ele entendeu o prazer de <em>calar ataques com um muro</em>.
+    </p>
+    <p><strong>Seu maior sonho?</strong><br />“Ser tão dominante que os atacantes desistam de tentar.”</p>
+    <p>
+      Ele raramente fala, mas sua presença intimida naturalmente. Seu maior rival é o ponteiro do colégio rival, <strong>Tetsuya Kamikaze</strong>, conhecido por cortar com giro aéreo.
+    </p>
+    <p>
+      O técnico o vê como uma arma defensiva pura, mas o capitão insiste que ele aprenda a se conectar mais com o time.
+    </p>
+    <p>
+      Sua frase icônica nasceu após um treino em que ele bloqueou sozinho três atacantes. Ao final, bocejou e disse:<br />
+      <em>“Se não vai passar por mim... nem precisa tentar.”</em>
+    </p>
+  </main>
+</body>
+</html>
